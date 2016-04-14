@@ -24,9 +24,7 @@
   },
   "homepage": "https://github.com/web-dave/ng-ts-tutorial#readme",
   "devDependencies": {
-    "lite-server": "^2.2.0",
-    "typescript": "^1.8.10",
-    "typings": "^0.7.12"
+    "lite-server": "^2.2.0"
   },
   "dependencies": {
     "angular": "^1.5.3",
