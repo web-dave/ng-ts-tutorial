@@ -1,0 +1,33 @@
+
+<md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column">
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-subhead">{{calc.operationToken}}</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                    <span class="md-headline">{{calc.output}}</span>
+                    <br>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(1)">1</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(2)">2</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(3)">3</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.add()">+</md-button>
+                    <br>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(4)">4</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(5)">5</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(6)">6</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.subtract()">-</md-button>
+                    <br>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(7)">7</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(8)">8</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(9)">9</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.clear()">C</md-button>
+                    <br>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.updateOutput(0)">0</md-button>
+                    <md-button class="md-fab" aria-label="Comment" ng-click="calc.calculate()">=</md-button>
+                </md-card-title-media>
+            </md-card-title>
+        </md-card>
+    </div>
+</md-content>
