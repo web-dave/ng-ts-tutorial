@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lite": "lite-server",
-    "start": " \"npm run lite\" "
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc:w": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/web-dave/ng-ts-tutorial#readme",
   "devDependencies": {
+    "concurrently": "^1.0.0",
     "lite-server": "^2.2.0"
   },
   "dependencies": {

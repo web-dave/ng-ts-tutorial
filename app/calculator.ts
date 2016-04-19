@@ -1,4 +1,4 @@
-(function() {
+namespace calculator {
     'use strict';
 
     angular
@@ -219,4 +219,4 @@
     };
 
     }
-})();
+}
