@@ -1,15 +1,16 @@
 namespace calculator {
     'use strict';
-    
+
     const calcDir: ng.IComponentOptions = {
         controller: 'calculatorController',
         templateUrl: 'app/calculator.html',
         controllerAs: 'calc'
     };
 
+    /* @ngInject */
     export class calculatorController{
         constructor() {
-            let vm: any = this;
+            let vm:any = this;
 
             // Bound to the output display
             vm.output = "0";
@@ -206,5 +207,6 @@ namespace calculator {
     angular
         .module('calculator')
         .component('calcDir', calcDir)
-        .controller('calculatorController', calculator.calculatorController);
+        .controller('calculatorController', calculatorController);
 }
+

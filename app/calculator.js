@@ -6,6 +6,7 @@ var calculator;
         templateUrl: 'app/calculator.html',
         controllerAs: 'calc'
     };
+    /* @ngInject */
     var calculatorController = (function () {
         function calculatorController() {
             var vm = this;
@@ -202,6 +203,6 @@ var calculator;
     angular
         .module('calculator')
         .component('calcDir', calcDir)
-        .controller('calculatorController', calculator.calculatorController);
+        .controller('calculatorController', calculatorController);
 })(calculator || (calculator = {}));
 //# sourceMappingURL=calculator.js.map
